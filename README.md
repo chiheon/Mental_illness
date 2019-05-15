@@ -1,2 +1,10 @@
-# Mental_illness
-자기주도연구2 - 온라인 커뮤니티 내에서 Mental illness 측정을 위한 모델 및 시각화 개발
+
+자기주도연구2
+
+Community Data를 이용하여 Mental illness 측정 model 제작 및 시각화
+<Twitter data의 신뢰성 검증>
+
+python(modeling)
+Flask
+Vue.js
+sqlite3
