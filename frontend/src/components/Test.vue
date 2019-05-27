@@ -8,11 +8,6 @@
       :src="item.src"
       class="carousel"
     >
-    <vue-word-cloud
-  :words="[['romance', 19], ['horror', 3], ['fantasy', 7], ['adventure', 3]]"
-  :color="([, weight]) => weight > 10 ? 'DeepPink' : weight > 5 ? 'RoyalBlue' : 'Indigo'"
-  font-family="Roboto"
-  />
     <div class="out_boardwrite">
       <div class="in_boardwrite">
         <b-card bg-variant="dark"

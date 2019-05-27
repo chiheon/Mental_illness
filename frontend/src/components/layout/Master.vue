@@ -16,13 +16,13 @@
       <v-toolbar-items>
         <v-btn to="/" flat>Main</v-btn>
         <v-btn @click="Popup" flat>Profile</v-btn>
-        <v-btn to="/graph" flat>Graph</v-btn>
+        <v-btn to="/analysis" flat>Analysis</v-btn>
+        <v-btn to="/twitter" flat>Twitter</v-btn>
         <v-btn to="/test" flat>Test</v-btn>
       </v-toolbar-items>
 
     </v-toolbar>
-    <div
-      style="max-height: 1000px;">
+    <div>
 
       <modals-container/>
       <router-view></router-view>
@@ -63,5 +63,8 @@ export default {
 </script>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Serif+KR&display=swap');
+html, body{
+  /* font-family: 'Noto Serif KR', serif; */
+}
 </style>
