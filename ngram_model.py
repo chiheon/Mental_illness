@@ -34,6 +34,16 @@ class Ngram:
                 freqlist[ngram] = 1
 
         return freqlist
+
+    def word_token(self, sentence, scores):
+        token = self.tokenizer.tokenize(sentence,scores)
+        text = list(token)
+        return text
+    
+    def noun_token(self, sentence, scores):
+        token = self.tokenizer.noun_extract(sentence,scores)
+        text = list(token)
+        return text
     
     def find_nearest_group(self,data,group1,group2,group3):
         predict = []

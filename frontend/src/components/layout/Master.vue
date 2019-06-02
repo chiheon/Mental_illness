@@ -64,6 +64,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Yeon+Sung&display=swap');
 html, body{
   /* font-family: 'Noto Serif KR', serif; */
 }
