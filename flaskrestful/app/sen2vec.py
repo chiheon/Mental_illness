@@ -11,7 +11,7 @@ class Sentence2Vec:
         self.scores = {}
         
     def load(self, model_file):
-        self.model = word2vec.KeyedVectors.load_word2vec_format(model_file, binary=True)
+        self.model = model = word2vec.KeyedVectors.load_word2vec_format(model_file, binary=True)
     
     def get_vector(self, sentence):
         sentence_list = []

@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Resource, Api
 from flask_restful import reqparse
-from rfModel import RfModel
+from binaryModel import BinaryModel
 from util import Util
 import json
 import ast
@@ -51,10 +51,12 @@ class Test(Resource):
         parser = reqparse.RequestParser()
         parser.add_argument('contents', type=str)
         args = parser.parse_args()
+        print(args)
         contents = args['contents']
-        check = RfModel().predict(contents)
-        check_3 = RfModel().predict_3(contents)
-        return {'result': str(check[0]),'result_3':str(check_3[0])}
+        print(contents)
+        prob = BinaryModel().predict(contents)
+        print(prob)
+        return {'sad': str(prob[0]),'adhd':str(prob[1]), 'schi':str(prob[2])}
 
 
 api.add_resource(Graph, '/graph/data')
