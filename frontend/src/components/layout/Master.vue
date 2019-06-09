@@ -22,7 +22,7 @@
       </v-toolbar-items>
 
     </v-toolbar>
-    <div>
+    <div style="height: 100%">
 
       <modals-container/>
       <router-view></router-view>
